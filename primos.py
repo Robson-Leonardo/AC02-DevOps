@@ -1,18 +1,17 @@
 import os
 from flask import Flask, jsonify, request
-from math import sqrt
 
 app = Flask(__name__)
 
 @app.route('/')
 
 def funcao():
-    maximo = 99
+    maximo = 100
     numero = 2
     primo = ""
     qntprimo = 0
     cont = 0
-    while qntprimo < maximo:
+    while qntprimo <= maximo:
         cont = 0
         for i in range(1,numero+1):
             if numero % i == 0:
