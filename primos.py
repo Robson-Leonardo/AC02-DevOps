@@ -4,7 +4,8 @@ from flask import Flask, jsonify, request
 app = Flask(_name_)
 
 @app.route('/')
-    def funcao():
+
+def funcao():
     maximo = 99
     numero = 2
     primo = ""
