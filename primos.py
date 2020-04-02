@@ -1,5 +1,6 @@
 import os
 from flask import Flask, jsonify, request
+from math import sqrt
 
 app = Flask(__name__)
 
@@ -24,10 +25,6 @@ def funcao():
     primo = primo[0:len(primo) - 2]
     return primo
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)
-
-
-
-
